@@ -22,6 +22,7 @@ import { Card, CardContent } from "./ui/card";
 import { formatDistanceToNow } from "date-fns";
 import { Avatar, AvatarImage } from "./ui/avatar";
 import { SignInButton, useUser } from "@clerk/nextjs";
+import { DeleteAlertDialog } from "./DeleteAlertDialog";
 
 type Posts = Awaited<ReturnType<typeof getPosts>>;
 

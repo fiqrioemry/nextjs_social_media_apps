@@ -1,11 +1,12 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Sidebar } from "lucide-react";
+
 import { Toaster } from "react-hot-toast";
 import Navbar from "@/components/Navbar";
 import { ClerkProvider } from "@clerk/nextjs";
 import { poppins, inter, roboto } from "@/config/theme";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import Sidebar from "@/components/Sidebar";
 
 export const metadata: Metadata = {
   title: "SnapPhoto",
