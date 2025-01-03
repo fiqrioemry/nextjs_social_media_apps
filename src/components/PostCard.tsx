@@ -1,27 +1,27 @@
 "use client";
 
-import { SignInButton, useUser } from "@clerk/nextjs";
-import { useState } from "react";
-import toast from "react-hot-toast";
-import { Card, CardContent } from "./ui/card";
-import Link from "next/link";
-import { Avatar, AvatarImage } from "./ui/avatar";
-import { formatDistanceToNow } from "date-fns";
-import { DeleteAlertDialog } from "./DeleteAlertDialog";
-import { Button } from "./ui/button";
 import {
   HeartIcon,
   LogInIcon,
   MessageCircleIcon,
   SendIcon,
 } from "lucide-react";
-import { Textarea } from "./ui/textarea";
+
 import {
   createComment,
   deletePost,
   getPosts,
   toggleLike,
 } from "@/action/post.action";
+import Link from "next/link";
+import { useState } from "react";
+import toast from "react-hot-toast";
+import { Button } from "./ui/button";
+import { Textarea } from "./ui/textarea";
+import { Card, CardContent } from "./ui/card";
+import { formatDistanceToNow } from "date-fns";
+import { Avatar, AvatarImage } from "./ui/avatar";
+import { SignInButton, useUser } from "@clerk/nextjs";
 
 type Posts = Awaited<ReturnType<typeof getPosts>>;
 
